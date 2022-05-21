@@ -1,16 +1,16 @@
 /* In this file, I aimed to write the code that checks whether the users input is q.*/
 
-let girdi;
+let usersEntries;
 let cevap;
 do {
-    girdi = prompt(`Girdi yapınız :`);
-    if (girdi=="q" || girdi=="Q" ) {
-        cevap = alert(`Tebrikler 😂`);
+    usersEntries = prompt(`Enter a word :`);
+    if (usersEntries=="q" || usersEntries=="Q" ) {
+        cevap = alert(`Congratulations! 😂`);
         break
     }
 
     else{
-        cevap = alert(`Tekrar deneyiniz 😂`);
+        cevap = alert(`Try again! 😥`);
     }
 
-} while (girdi != `q` || girdi != `Q`);
+} while (usersEntries != `q` || usersEntries != `Q`);
