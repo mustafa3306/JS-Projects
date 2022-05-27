@@ -1,7 +1,4 @@
 ////////*In this file, we will do some examples about javascript objects.
-
-//* Example-1 ---> List the people who younger than 33.
-
 const kisiler = [
     {
       name: "Ahmet",
@@ -36,6 +33,9 @@ const kisiler = [
     },
   ];
 
+//* Example-1 ---> List the people who younger than 33.
 
-const littles = kisiler.filter( (yas) => yas.age < 33 ).forEach();
+
+
+const littles = kisiler.filter( (yas) => yas.age < 33 ).forEach( (ad) => console.log(ad.name));
 
