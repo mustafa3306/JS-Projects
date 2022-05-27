@@ -56,3 +56,14 @@ const isYas = kisiler
     age: is.age,
   }));
 console.log(isYas);
+
+
+//* Example-4 ---> ortalamanın altında maaşı olanlara 20% zam yap listele
+
+const maaslar = [3000, 5000, 4000, 6000, 6500];
+
+const yeniMaas = maaslar
+  .filter((ort) => ort < maaslar.reduce((a, b) => a + b, 0) / maaslar.length)
+  .map((zam) => zam * 1.2);
+
+console.log(yeniMaas);
