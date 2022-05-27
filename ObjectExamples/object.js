@@ -37,5 +37,7 @@ const kisiler = [
 
 
 
-const littles = kisiler.filter( (yas) => yas.age < 33 ).forEach( (ad) => console.log(ad.name));
+const littles = kisiler.filter((yas) => yas.age < 33).forEach((ad) => console.log(ad.name));
+
+//* Example-2 --->
 
