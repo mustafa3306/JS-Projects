@@ -39,5 +39,9 @@ const kisiler = [
 
 const littles = kisiler.filter((yas) => yas.age < 33).forEach((ad) => console.log(ad.name));
 
-//* Example-2 --->
+//* Example-2 ---> Please keep the names of those under 33 years old in the array
+
+const littleName = kisiler.filter((yas) => yas.age < 33).map((nm) => nm.name);
+
+console.log(littleName);
 
